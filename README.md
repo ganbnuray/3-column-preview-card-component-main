@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-3-column-layout-webpage-html5css3flexbox-and-grid-9-xpKwwCA](https://www.frontendmentor.io/solutions/responsive-3-column-layout-webpage-html5css3flexbox-and-grid-9-xpKwwCA)
 - Live Site URL: [https://ganbnuray.github.io/3-column-preview-card-component-main/](https://ganbnuray.github.io/3-column-preview-card-component-main/)
 
 ### Built with
