@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --bwhite:hsl(0, 0%, 95%);
+    --orange:hsl(31, 77%, 52%);
+    --cyan:hsl(184, 100%, 22%);
+    --darkcyan:hsl(179, 100%, 13%);
+    --pwhite:hsla(0, 0%, 100%, 0.75);
+    --lgray:hsl(0, 0%, 95%);
+}
+html,body{
+    width:100%;
+    height:100vh;
+}
+body{
+    background-color: var(--bwhite);
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-family: 'Lexend Deca',sans-serif;
+}
+img{
+    display: block;
+    width:70px;
+    padding-block-end: 30px;
+}
+main{
+    /* height:70vh;
+    margin-block-start: 15vh;
+    margin-block-end: 15vh; */
+    display: flex;
+    align-items: center;
+}
+.container{
+    width:70%;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    border-radius:8px;
+    overflow: hidden;
+}
+.box{
+    height: 100%;
+    padding-block-start: 20%;
+    padding-block-end: 20%;
+    width:100%;
+}
+.wrapper{
+    width:74%;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content:space-between;
+    flex: 1;
+}
+.wrapper h1{
+    font-family:'Big Shoulders Display',sans-serif;
+    color:var(--lgray);
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-block-end: 30px;
+}
+.wrapper p{
+    color:var(--pwhite);
+    font-size: 1.3em;
+    margin-block-end: 80px;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+button{
+    background-color: var(--lgray);
+    border:none;
+    height:50px;
+    border-radius: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.1em;
+    width:80%;
+    cursor: pointer;
+    justify-self: flex-end;
+}
+.sedans button{
+    color:var(--orange);
+}
+.suvs button{
+    color:var(--cyan);
+}
+.luxury button{
+    color:var(--darkcyan);
+}
+.sedans{
+    background-color: var(--orange);
+}
+.suvs{
+    background-color: var(--cyan);
+}
+.luxury{
+    background-color: var(--darkcyan);
+}
+button:hover{
+    color:var(--lgray);
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border:2px solid var(--lgray);
+}
+@media(max-width:1120px){
+    .container{
+        width:90%;
+        margin:auto;
+        display:flex;
+        flex-direction: column;
+    }
+    main{
+        height:100vh;
+    }
+    .box{
+        width:100%;
+        height:fit-content;
+        padding-block-end:50px;
+    }
+    .wrapper p{
+        font-size: 1.5em;
+        line-height: 1.6em;
+    }
+    .luxury{
+        margin-block-end: 10vh;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .sedans{
+        margin-block-start: 10vh;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+}
