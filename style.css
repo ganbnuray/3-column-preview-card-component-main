@@ -45,7 +45,6 @@ main{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     border-radius:8px;
-    overflow: hidden;
 }
 .box{
     height: 100%;
